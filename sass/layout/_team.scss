@@ -1,0 +1,37 @@
+.team {
+  background-color: var(--background-color-two);
+}
+
+.our-team {
+  display: flex;
+}
+.our-team__list {
+  background-color: var(--color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+
+  &:nth-child(4n) {
+    margin-right: 0px;
+  }
+}
+
+.our-team__wraper {
+  padding: 30px;
+  text-align: center;
+}
+
+.our-team__name {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 10px;
+}
+
+.our-team__job-title {
+  line-height: 1.18;
+  margin-bottom: 16px;
+}

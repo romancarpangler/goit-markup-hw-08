@@ -1,0 +1,26 @@
+@import "./utils/variables";
+@import "./utils/invisible";
+@import "./utils/remove-dots";
+@import "./utils/placeholder";
+@import "./utils/mixin";
+
+@import "./base/common";
+@import "./base/section";
+@import "./base/container";
+
+@import "./components/title-compani.scss";
+@import "./components/logo";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/form";
+@import "./components/social-networks";
+
+@import "./layout/header";
+@import "./layout/hero.scss";
+@import "./layout/benefist";
+@import "./layout/work-examples";
+@import "./layout/team";
+@import "./layout/compani";
+@import "./layout/footer";
+
+@import "./layout/portfolio";

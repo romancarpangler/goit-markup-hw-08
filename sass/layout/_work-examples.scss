@@ -1,0 +1,35 @@
+.work-examples {
+  padding-top: 0;
+}
+
+.completed-projects {
+  display: flex;
+}
+.completed-projects__list {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.completed-projects__wraper {
+  position: relative;
+}
+
+.completed-projects__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}

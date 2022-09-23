@@ -1,0 +1,36 @@
+.benefist {
+  display: flex;
+}
+
+.benefist__list {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+
+  &:nth-child(4n) {
+    margin-right: 0px;
+  }
+}
+
+.benefist__div-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  height: 120px;
+}
+
+.benefist__title {
+  color: var(--color-black);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+}
+
+.benefist__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
