@@ -20,7 +20,7 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="container">
+      <div class="container page-header">
         <nav class="navigation">
           <a href="index.html" class="logo">
             <span class="logo__span">Web</span>Studio
@@ -62,13 +62,28 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="button-open-menu" js-open-menu>
+          <svg width="24" height="16">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" js-menu-container>
+        <div class="container mobile-menu-wraper">
+          <button type="button" class="close-mobile-menu" js-close-menu>
+            <svg width="19" height="19">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
     <!-- main -->
-    <main>
-      <!-- section 1 -->
-      <section class="hero section">
+    <!-- <main> -->
+    <!-- section 1 -->
+    <!-- <section class="hero section">
         <div class="container">
           <h1 class="hero__title">
             Ефективні рішення для<br />
@@ -79,10 +94,10 @@
             Замовити послугу
           </button>
         </div>
-      </section>
+      </section> -->
 
-      <!-- section 2 -->
-      <section class="section">
+    <!-- section 2 -->
+    <!-- <section class="section">
         <div class="container">
           <h2 class="invisible">наші переваги</h2>
           <ul class="benefist">
@@ -135,10 +150,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- section 3 -->
-      <section class="work-examples section">
+    <!-- section 3 -->
+    <!-- <section class="work-examples section">
         <div class="container">
           <h2 class="title-compani">Чим ми займаємося</h2>
 
@@ -176,10 +191,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- section 4 -->
-      <section class="team section">
+    <!-- section 4 -->
+    <!-- <section class="team section">
         <div class="container">
           <h2 class="title-compani">Наша команда</h2>
           <ul class="our-team">
@@ -188,10 +203,11 @@
                 <source
                   srcset="./images/img1.webp 1x, ./images/img1@2x.webp 2x"
                   media="(min-width: 1200px)"
+                  type="imege/webp"
                 />
 
                 <source
-                  srcset="./images/img1.jpg x1, ./images/img1@2x.jpg 2x"
+                  srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
 
@@ -201,6 +217,7 @@
                     ./images/img1@2xtablet.webp 2x
                   "
                   media="(min-width: 768px)"
+                  type="imege/webp"
                 />
 
                 <source
@@ -214,6 +231,7 @@
                 <source
                   srcset="./images/img1tel.webp 1x, ./images/img1@2xtel.webp 2x"
                   media="(max-width: 767px)"
+                  type="imege/webp"
                 />
 
                 <source
@@ -221,7 +239,7 @@
                   media="(max-width: 767px)"
                 />
 
-                <img src="#" alt="ігор" width="270" height="268" />
+                <img src="#" alt="ігор" width="100%" />
               </picture>
 
               <div class="our-team__wraper">
@@ -270,10 +288,11 @@
                 <source
                   srcset="./images/img2.webp 1x, ./images/img2@2x.webp 2x"
                   media="(min-width: 1200px)"
+                  type="image/webp"
                 />
 
                 <source
-                  srcset="./images/img2.jpg x1, ./images/img2@2x.jpg 2x"
+                  srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
 
@@ -283,6 +302,7 @@
                     ./images/img2@2xtablet.webp 2x
                   "
                   media="(min-width: 768px)"
+                  type="image/webp"
                 />
 
                 <source
@@ -296,6 +316,7 @@
                 <source
                   srcset="./images/img2tel.webp 1x, ./images/img2@2xtel.webp 2x"
                   media="(max-width: 767px)"
+                  type="image/webp"
                 />
 
                 <source
@@ -303,7 +324,7 @@
                   media="(max-width: 767px)"
                 />
 
-                <img src="#" alt="ольга" width="270" height="268" />
+                <img src="#" alt="ольга" width="100%" />
               </picture>
 
               <div class="our-team__wraper">
@@ -352,10 +373,11 @@
                 <source
                   srcset="./images/img3.webp 1x, ./images/img3@2x.webp 2x"
                   media="(min-width: 1200px)"
+                  type="image/webp"
                 />
 
                 <source
-                  srcset="./images/img3.jpg x1, ./images/img3@2x.jpg 2x"
+                  srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
 
@@ -365,6 +387,7 @@
                     ./images/img3@2xtablet.webp 2x
                   "
                   media="(min-width: 768px)"
+                  type="image/webp"
                 />
 
                 <source
@@ -378,6 +401,7 @@
                 <source
                   srcset="./images/img3tel.webp 1x, ./images/img3@2xtel.webp 2x"
                   media="(max-width: 767px)"
+                  type="image/webp"
                 />
 
                 <source
@@ -385,7 +409,7 @@
                   media="(max-width: 767px)"
                 />
 
-                <img src="#" alt="микола" width="270" height="268" />
+                <img src="#" alt="микола" width="100%" />
               </picture>
 
               <div class="our-team__wraper">
@@ -434,10 +458,11 @@
                 <source
                   srcset="./images/img4.webp 1x, ./images/img4@2x.webp 2x"
                   media="(min-width: 1200px)"
+                  type="image/webp"
                 />
 
                 <source
-                  srcset="./images/img4.jpg x1, ./images/img4@2x.jpg 2x"
+                  srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
 
@@ -447,6 +472,7 @@
                     ./images/img4@2xtablet.webp 2x
                   "
                   media="(min-width: 768px)"
+                  type="image/webp"
                 />
 
                 <source
@@ -460,6 +486,7 @@
                 <source
                   srcset="./images/img4tel.webp 1x, ./images/img4@2xtel.webp 2x"
                   media="(max-width: 767px)"
+                  type="image/webp"
                 />
 
                 <source
@@ -467,7 +494,7 @@
                   media="(max-width: 767px)"
                 />
 
-                <img src="#" alt="михайло" width="270" height="268" />
+                <img src="#" alt="михайло" width="100%" />
               </picture>
 
               <div class="our-team__wraper">
@@ -513,10 +540,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- section 5 -->
-      <section class="section">
+    <!-- section 5 -->
+    <!-- <section class="section">
         <div class="container">
           <h2 class="title-compani">Постійні клієнти</h2>
           <ul class="compani">
@@ -565,10 +592,10 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!-- footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__wraper">
         <div class="footer__wraper-logo">
           <a href="index.html" class="footer__logo">
@@ -668,7 +695,7 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -750,5 +777,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
