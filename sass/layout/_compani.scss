@@ -21,6 +21,13 @@
   }
 }
 
+@media screen and (max-width: 472px) {
+  .compani__list-logo {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .compani {
     gap: 22px;
