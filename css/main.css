@@ -568,6 +568,15 @@ button {
           transform: rotate(90deg);
 }
 
+.social-links {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-decoration: none;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
