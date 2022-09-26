@@ -1,14 +1,6 @@
 .compani {
   display: flex;
-}
-
-.compani__list-logo {
-  margin-right: 30px;
-  width: calc((100% - 150px) / 6);
-
-  &:last-child {
-    margin-right: 0;
-  }
+  flex-wrap: wrap;
 }
 
 .compani__logo {
@@ -26,5 +18,34 @@
   &:focus {
     fill: #2196f3;
     border: solid 1px #2196f3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .compani {
+    gap: 22px;
+  }
+  .compani__logo {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .compani__logo {
+    width: 226px;
+  }
+
+  .compani {
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .compani__logo {
+    width: 170px;
+  }
+
+  .compani {
+    gap: 30px;
   }
 }
