@@ -1356,6 +1356,12 @@ button {
   .portfolio__list-buttons {
     margin-bottom: 40px;
   }
+  .portfolio__working-projects-list {
+    margin-bottom: 30px;
+  }
+  .portfolio__working-projects-list:last-child {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolio__list-buttons {
@@ -1380,6 +1386,7 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100%;
   }
   .portfolio__div {
     -webkit-box-flex: 1;
