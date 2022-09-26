@@ -134,13 +134,12 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .wraper-adres-social {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
   .footer__wraper-logo {
     margin-right: 165px;
   }
@@ -181,10 +180,12 @@
   .footer-form__wraper {
     display: flex;
     justify-content: center;
+    align-items: baseline;
   }
 
   .footer-form__input {
     width: 358px;
+    margin-right: 12px;
   }
 }
 // .footer__wraper {

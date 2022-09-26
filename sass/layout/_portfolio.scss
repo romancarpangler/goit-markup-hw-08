@@ -1,8 +1,8 @@
 .portfolio__list-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .portfolio__button {
@@ -31,28 +31,11 @@
 }
 
 .active {
+  padding: 6px, 25px;
   color: var(--color-white);
   background-color: var(--color-blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.portfolio__working-projects {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolio__working-projects-list {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
-
-  &:nth-child(3n) {
-    margin-right: 0px;
-  }
-
-  &:nth-child(n + 6) {
-    margin-bottom: 0px;
-  }
 }
 
 .portfolio__link {
@@ -65,11 +48,6 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-}
-
-.portfolio__div-cards {
-  position: relative;
-  overflow: hidden;
 }
 
 .portfolio__overlay {
@@ -90,6 +68,11 @@
   .portfolio__link:focus & {
     transform: translateY(0%);
   }
+}
+
+.portfolio__div-cards {
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio__div {
@@ -113,3 +96,57 @@
   line-height: 1.87;
   color: var(--color-grey);
 }
+
+@media screen and (max-width: 767px) {
+  .portfolio__list-buttons {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__list-buttons {
+    margin-bottom: 30px;
+  }
+
+  .portfolio__working-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .portfolio__working-projects-list {
+    width: 354px;
+  }
+
+  .portfolio__link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio__div {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__list-buttons {
+    margin-bottom: 50px;
+  }
+
+  .portfolio__working-projects-list {
+    width: 370px;
+  }
+}
+// .portfolio__working-projects-list {
+//   width: calc((100% - 60px) / 3);
+//   margin-right: 30px;
+//   margin-bottom: 30px;
+
+//   &:nth-child(3n) {
+//     margin-right: 0px;
+//   }
+
+//   &:nth-child(n + 6) {
+//     margin-bottom: 0px;
+//   }
+// }

@@ -20,7 +20,7 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="container">
+      <div class="container page-header">
         <nav class="navigation">
           <a href="index.html" class="logo">
             <span class="logo__span">Web</span>Studio
@@ -28,15 +28,15 @@
 
           <ul class="menu">
             <li class="remove-dots">
-              <a href="./index.html" class="menu__link">Студія</a>
+              <a class="menu__link" href="./index.html">Студія</a>
             </li>
             <li class="remove-dots">
-              <a href="./portfolio.html" class="menu__link menu__link--current"
+              <a class="menu__link menu__link--current" href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
             <li class="remove-dots">
-              <a href="" class="menu__link">Контакти</a>
+              <a class="menu__link" href="">Контакти</a>
             </li>
           </ul>
 
@@ -53,7 +53,7 @@
               >
             </li>
             <li class="remove-dots">
-              <a href="tel:+380961111111" class="navigation__link-contacts">
+              <a href="tel:+380961111111" class="navigation__link-contact">
                 <svg class="navigation__icon" width="10" height="16">
                   <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
@@ -62,6 +62,105 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="button-open-menu js-open-menu">
+          <svg width="24" height="16">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-wraper">
+          <button type="button" class="close-mobile-menu js-close-menu">
+            <svg width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="wraper-menu-link">
+            <li class="remove-dots menu-list">
+              <a class="menu-link" href="./index.html">Студія</a>
+            </li>
+            <li class="remove-dots menu-list">
+              <a class="menu-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="remove-dots menu-list">
+              <a class="menu-link" href="">Контакти</a>
+            </li>
+          </ul>
+          <ul class="wraper-menu-linc-contacts">
+            <li class="remove-dots menu-list-contacts">
+              <a class="menu-linc-contact" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="remove-dots">
+              <a class="menu-linc-contacts" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="social-link-wraper">
+            <li class="remove-dots">
+              <a class="social-link" href="">Instagram</a>
+            </li>
+            <li class="remove-dots">
+              <a class="social-link" href="">Twitter</a>
+            </li>
+            <li class="remove-dots">
+              <a class="social-link" href="">Facebook</a>
+            </li>
+            <li class="remove-dots">
+              <a class="social-link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-wraper">
+          <button type="button" class="close-mobile-menu js-close-menu">
+            <svg width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="wraper-menu-link">
+            <li class="remove-dots menu-list">
+              <a class="menu-link" href="./index.html">Студія</a>
+            </li>
+            <li class="remove-dots menu-list">
+              <a class="menu-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="remove-dots menu-list">
+              <a class="menu-link" href="">Контакти</a>
+            </li>
+          </ul>
+          <ul class="wraper-menu-linc-contacts">
+            <li class="remove-dots menu-list-contacts">
+              <a class="menu-linc-contact" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="remove-dots">
+              <a class="menu-linc-contacts" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="social-link-wraper">
+            <li class="remove-dots">
+              <a class="social-link" href="">Instagram</a>
+            </li>
+            <li class="remove-dots">
+              <a class="social-link" href="">Twitter</a>
+            </li>
+            <li class="remove-dots">
+              <a class="social-link" href="">Facebook</a>
+            </li>
+            <li class="remove-dots">
+              <a class="social-link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -665,87 +764,90 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container footer__wraper">
-        <div class="footer__wraper-logo">
-          <a href="index.html" class="footer__logo">
-            <span class="footer__logo-span">Web</span>Studio
-          </a>
+        <div class="wraper-adres-social">
+          <div class="footer__wraper-logo">
+            <a href="index.html" class="footer__logo">
+              <span class="footer__logo-span">Web</span>Studio
+            </a>
 
-          <address class="footer__addres">
-            м. Київ, пр-т Лесі Українки, 26
-          </address>
+            <address class="footer__addres">
+              м. Київ, пр-т Лесі Українки, 26
+            </address>
 
-          <ul>
-            <li class="footer__contacts remove-dots">
-              <a href="mailto:info@example.com" class="footer__contact"
-                >info@example.com</a
-              >
-            </li>
-            <li class="remove-dots">
-              <a href="tel:+380991111111" class="footer__contact"
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
+            <ul>
+              <li class="footer__contacts remove-dots">
+                <a href="mailto:info@example.com" class="footer__contact"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="remove-dots">
+                <a href="tel:+380991111111" class="footer__contact"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-social-network">
+            <h3 class="footer-social-network__title">ПРИЄДНУЙТЕСЬ</h3>
+
+            <ul class="footer-social-network__list">
+              <li class="remove-dots footer-social-network__list-svg">
+                <div class="gg">
+                  <a class="footer-social-network__link" href=""
+                    ><svg
+                      class="footer-social-network__svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+              <li class="remove-dots footer-social-network__list-svg">
+                <div class="gg">
+                  <a class="footer-social-network__link" href=""
+                    ><svg
+                      class="footer-social-network__svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+              <li class="remove-dots footer-social-network__list-svg">
+                <div class="gg">
+                  <a class="footer-social-network__link" href=""
+                    ><svg
+                      class="footer-social-network__svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="remove-dots footer-social-network__list-svg">
+                <div class="gg">
+                  <a class="footer-social-network__link" href=""
+                    ><svg
+                      class="footer-social-network__svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/symbol-defs.svg#icon-lincedin"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-social-network">
-          <h3 class="footer-social-network__title">ПРИЄДНУЙТЕСЬ</h3>
 
-          <ul class="footer-social-network__list">
-            <li class="remove-dots footer-social-network__list-svg">
-              <div class="">
-                <a class="footer-social-network__link" href=""
-                  ><svg
-                    class="footer-social-network__svg"
-                    width="20"
-                    height="20"
-                  >
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-            <li class="remove-dots footer-social-network__list-svg">
-              <div class="">
-                <a class="footer-social-network__link" href=""
-                  ><svg
-                    class="footer-social-network__svg"
-                    width="20"
-                    height="20"
-                  >
-                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-            <li class="remove-dots footer-social-network__list-svg">
-              <div class="">
-                <a class="footer-social-network__link" href=""
-                  ><svg
-                    class="footer-social-network__svg"
-                    width="20"
-                    height="20"
-                  >
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-
-            <li class="remove-dots footer-social-network__list-svg">
-              <div class="">
-                <a class="footer-social-network__link" href=""
-                  ><svg
-                    class="footer-social-network__svg"
-                    width="20"
-                    height="20"
-                  >
-                    <use href="./images/symbol-defs.svg#icon-lincedin"></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-          </ul>
-        </div>
         <form class="footer-form">
           <b class="footer-form__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</b>
           <div class="footer-form__wraper">
@@ -764,5 +866,7 @@
         </form>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
