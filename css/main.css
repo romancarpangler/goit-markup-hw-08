@@ -682,7 +682,7 @@ button {
     display: block;
     width: 100%;
     height: 4px;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     border-radius: 2px;
     background-color: var(--color-blue);
@@ -739,6 +739,20 @@ button {
   }
 }
 @media screen and (min-width: 1200px) {
+  .menu__link--current {
+    color: var(--color-blue);
+  }
+  .menu__link--current::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 2px;
+    background-color: var(--color-blue);
+  }
   .navigation__contacts {
     display: -webkit-box;
     display: -ms-flexbox;
