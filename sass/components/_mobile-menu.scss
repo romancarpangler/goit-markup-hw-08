@@ -33,8 +33,11 @@
 }
 
 .mobile-menu-wraper {
-  padding-left: 40px;
+  padding: 48px, 40px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
 }
@@ -47,7 +50,6 @@
 }
 
 .wraper-menu-link {
-  padding-top: 48px;
   gap: 32px;
 }
 
@@ -73,7 +75,7 @@
 }
 
 .wraper-menu-linc-contacts {
-  margin-top: 200px;
+  margin-top: auto;
 }
 
 .menu-list-contacts {
@@ -100,8 +102,8 @@
 
 .social-link-wraper {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
-  padding-bottom: 48px;
   gap: 20px;
 }
 
