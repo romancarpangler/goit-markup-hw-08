@@ -100,6 +100,7 @@
 @media screen and (max-width: 767px) {
   .portfolio__list-buttons {
     margin-bottom: 40px;
+    justify-content: flex-start;
   }
 
   .portfolio__working-projects-list {
@@ -123,7 +124,7 @@
   }
 
   .portfolio__working-projects-list {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
   }
 
   .portfolio__link {
@@ -143,19 +144,6 @@
   }
 
   .portfolio__working-projects-list {
-    width: 370px;
+    width: calc((100% - 60px) / 3);
   }
 }
-// .portfolio__working-projects-list {
-//   width: calc((100% - 60px) / 3);
-//   margin-right: 30px;
-//   margin-bottom: 30px;
-
-//   &:nth-child(3n) {
-//     margin-right: 0px;
-//   }
-
-//   &:nth-child(n + 6) {
-//     margin-bottom: 0px;
-//   }
-// }

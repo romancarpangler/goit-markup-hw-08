@@ -46,12 +46,12 @@
   }
 
   .our-team__list {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .our-team__list {
-    width: 270px;
+    width: calc((100% - 90px) / 4);
   }
 }

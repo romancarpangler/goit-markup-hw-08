@@ -14,7 +14,6 @@
   line-height: 1.14;
   margin-bottom: 10px;
   margin-top: 30px;
-  text-align: center;
   color: #212121;
 }
 
@@ -32,6 +31,10 @@
       margin-bottom: 0px;
     }
   }
+
+  .benefist__title {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -41,8 +44,12 @@
     gap: 30px;
   }
 
+  .benefist__title {
+    margin-right: auto;
+  }
+
   .benefist__list {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
   }
 }
 
@@ -52,6 +59,6 @@
   }
 
   .benefist__list {
-    width: 270px;
+    width: calc((100% - 90px) / 4);
   }
 }

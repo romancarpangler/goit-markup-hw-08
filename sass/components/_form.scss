@@ -168,7 +168,7 @@
   }
 }
 
-@media screen and(max-width:1199px) {
+@media screen and(max-width: 1199px) {
   .span {
     font-weight: 400;
     font-size: 12px;
@@ -179,5 +179,16 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
+  }
+}
+@media screen and(min-width: 1200px) {
+  .span {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .modal-link {
+    font-size: 14px;
+    line-height: 24px;
   }
 }

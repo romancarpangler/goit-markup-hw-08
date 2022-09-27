@@ -40,6 +40,10 @@
     width: 226px;
   }
 
+  .compani__list-logo {
+    width: calc((100% - 60px) / 3);
+  }
+
   .compani {
     gap: 30px;
   }
@@ -48,6 +52,10 @@
 @media screen and (min-width: 1200px) {
   .compani__logo {
     width: 170px;
+  }
+
+  .compani__list-logo {
+    width: calc((100% - 150px) / 6);
   }
 
   .compani {
