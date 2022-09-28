@@ -822,8 +822,8 @@ button {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Imgm.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Imgm.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/imgm.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imgm.jpg);
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (max-width: 767px) and (min-resolution: 192dpi) and (max-width: 767px), screen and (max-width: 767px) and (min-resolution: 2dppx) and (max-width: 767px) {
