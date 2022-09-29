@@ -70,17 +70,17 @@ button {
   padding: 0;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 @media screen and (max-width: 1199px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -103,12 +103,6 @@ button {
     width: 1200px;
   }
 }
-@media screen and (max-width: 1199) {
-  .title-compani {
-    margin-bottom: 30px;
-    font-size: 28px;
-  }
-}
 .title-compani {
   font-weight: 700;
   font-size: 36px;
@@ -119,6 +113,12 @@ button {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1199px) {
+  .title-compani {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+}
 .logo {
   color: var(--color-black);
   font-family: Raleway, sans-serif;
@@ -358,6 +358,8 @@ button {
   border-radius: 2px;
   cursor: pointer;
   margin-right: 7px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .checkbox:focus + .svg-checkbox {
   border: 2px solid var(--color-blue);
@@ -519,7 +521,7 @@ button {
 .close-mobile-menu {
   position: absolute;
   top: 21px;
-  right: 45px;
+  right: 25px;
   background-color: #fff;
 }
 
@@ -1272,6 +1274,10 @@ button {
   }
   .footer__wraper-logo {
     margin-right: 165px;
+    text-align: center;
+  }
+  .footer-social-network {
+    text-align: center;
   }
   .footer-form {
     text-align: center;
@@ -1444,6 +1450,7 @@ button {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    gap: 15px 8px;
   }
   .portfolio__working-projects-list {
     margin-bottom: 30px;
